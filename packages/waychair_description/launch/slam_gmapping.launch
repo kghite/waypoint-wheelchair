@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
   <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping">
-    <remap from="/scan" to="/waychair/sensor_laser/scan"/>
-    <param name="base_frame" value="base_footprint"/>
+    <remap from="/scan" to="/waychair/laser_scan/scan"/>
+    <remap from="/odom" to="/waychair/base_controller/odom"/>
   </node>
 </launch>
