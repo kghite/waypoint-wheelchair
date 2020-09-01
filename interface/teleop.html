@@ -1,0 +1,33 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" href="style/teleop.css">
+
+<script type="text/javascript" src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+<script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+<script type="text/javascript" src="js/teleop.js"></script>
+
+</head>
+
+<body onload="init()">
+
+<h1 align="center">Waychair Drive Remote</h1>
+
+<div class="row">
+	<input type="button" id="forward" value="f" class="arrow up" onclick="sendTeleop(value);" />
+</div>
+
+<div class="row">
+	<input type="button" id="left" value="l" class="arrow left" onclick="sendTeleop(value);" />
+	<input type="button" id="stop" value="s" class="stop" onclick="sendTeleop(value);" />
+	<input type="button" id="right" value="r" class="arrow right" onclick="sendTeleop(value);" />
+</div>
+
+<div class="row">
+	<input type="button" id="backward" value="b" class="arrow down" onclick="sendTeleop(value);" />
+</div>
+
+</body>
+
+</html>

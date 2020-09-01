@@ -1,0 +1,53 @@
+.row {
+  text-align: center;
+  margin: 5%;
+  clear: both;
+}
+
+input.arrow {
+	background: white;
+	font-size: 0px;
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 16px;
+	margin: 5%;
+}
+
+input.arrow:hover {
+	background: green;
+}
+
+input.up {
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+}
+
+input.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+input.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+input.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+input.stop {
+	background: white;
+	font-size: 0px;
+	border: solid black;
+	border-width: 3px;
+	display: inline-block;
+	padding: 16px;
+	margin: 5%;
+}
+
+input.stop:hover {
+	background: red;
+}
